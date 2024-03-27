@@ -4,15 +4,15 @@ This Python codebase is designed for solving mixed quantum-classical dynamics, f
 
 Structure Overview:
 Main File: "int.py"
-
 This file serves as the central control point, responsible for setting parameters and choosing integration options for both quantum and classical systems.
-Dynamics Solver: "EOM.py"
 
+Dynamics Solver: "EOM.py"
 Contains functions for solving the equations of motion (EOM) for both the classical and quantum systems.
 Specifically, it defines the CEOM function for classical dynamics, which corresponds to a Brownian oscillator, and the QEOM function for quantum dynamics, described by the time-dependent Schrödinger equation.
-Quantum Hamiltonian Definition: "Hamiltonian.py"
 
+Quantum Hamiltonian Definition: "Hamiltonian.py"
 Defines the Hamiltonian for the quantum system and manages interactions with the classical system.
+
 Integration Methods:
 For Quantum System:
 Runge-Kutta 4th Order: Integ_QEOM
@@ -21,8 +21,10 @@ For Classical System:
 RK4: Integ_CEOM
 Runge–Kutta–Fehlberg: Integ_CEOM2
 RK8: Integ_CEOM3
+
 Parallel Execution:
 The code is designed to run in parallel using the POOL library, enhancing computational efficiency.
+
 Customization:
 To adapt the code for different systems, modifications are primarily made in the following files:
 "int.py": Adjust parameters and integration options.

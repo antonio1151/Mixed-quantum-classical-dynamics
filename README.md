@@ -1,12 +1,12 @@
 # Mixed-quantum-classical-dynamics
 
-This Python codebase is designed for solving mixed quantum-classical dynamics, focusing initially on the relaxation of a two-level quantum system influenced by vacuum fluctuations within a cavity. However, the code can be readily adapted to tackle various other systems, regardless of their quantum system's dimensionality.
+This Python codebase is designed for solving mixed quantum-classical dynamics, focusing initially on the relaxation of a two-level quantum system influenced by vacuum fluctuations within a cavity. However, the code can be easily adapted to tackle various other systems, regardless of their quantum system's dimensionality.
 
 Structure Overview:
 
 Main File: "int.py"
 
-This file serves as the central control point, responsible for setting parameters and choosing integration options for both quantum and classical systems.
+This file is the central control point for setting parameters and choosing integration options for both quantum and classical systems.
 
 
 Dynamics Solver: "EOM.py"
